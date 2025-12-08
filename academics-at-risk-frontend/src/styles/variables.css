@@ -1,0 +1,65 @@
+:root {
+  --primary-navy: #1e3a5f;        
+  --secondary-navy: #2c4f6f;      
+  --dark-navy: #15293f;           
+  --darker-navy: #0d1b2a;         
+  --light-navy: #3d5a7c;          
+  
+  --accent-teal: #6eb5a0;         
+  --accent-teal-hover: #5a9d88;  
+  --accent-teal-light: #8dc9b5;   
+  
+  --sky-blue: #a8dadc;
+  --sky-blue-light: #c8e9ea;
+  --sky-blue-soft: #bee3e5;
+  --powder-blue: #b8d4e6;
+  --ice-blue: #d4e7f5;
+  --sky-blue-pale: #e8f4f8;
+  
+  --hope-gold: #f4a261;
+  --hope-gold-light: #f6b17a;
+  --hope-gold-dark: #e8894e;
+  --hope-amber: #fbbf24;
+  --hope-sunrise: #fcd34d;
+  
+  --text-light: #f8fafc;          
+  --text-muted: #cbd5e1;         
+  --text-gray: #94a3b8;           
+  --text-dim: #64748b;
+  --text-on-pastel: #1e3a5f;
+  
+  --input-bg: #2c4f6f;            
+  --input-border: #3d5a7c;        
+  --input-focus: #a8dadc;
+  
+  --shadow-sm: rgba(0, 0, 0, 0.1);
+  --shadow-md: rgba(0, 0, 0, 0.2);
+  --shadow-lg: rgba(0, 0, 0, 0.3);
+  --shadow-sky: rgba(168, 218, 220, 0.4);
+  --shadow-gold: rgba(244, 162, 97, 0.3);
+  --overlay: rgba(30, 58, 95, 0.9);
+  
+  --gradient-sky: linear-gradient(135deg, #a8dadc, #d4e7f5);
+  --gradient-calm: linear-gradient(to bottom, #c8e9ea, #b8d4e6);
+  --gradient-freedom: linear-gradient(135deg, #1e3a5f, #a8dadc);
+  --gradient-hope: linear-gradient(135deg, #f4a261, #fcd34d);
+  
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  --transition: all 0.3s ease;
+  --transition-fast: all 0.15s ease;
+  --transition-slow: all 0.5s ease;
+}

@@ -1,0 +1,48 @@
+.contact-page {
+  min-height: calc(100vh - 200px);
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.contact-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.7;
+}
+
+.info-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.info-section h3 {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.2rem;
+}
+
+.info-section p {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-xs);
+}
+
+.small-text {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 968px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
