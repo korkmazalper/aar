@@ -31,7 +31,8 @@ jobs:
             - name: Install dependencies
               run: npm install
               working-directory: ./academics-at-risk-frontend
-
+              env:
+                  ROLLUP_SKIP_NATIVE: true
             - name: Build
               run: npm run build
               working-directory: ./academics-at-risk-frontend
