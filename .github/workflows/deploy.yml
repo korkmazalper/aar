@@ -18,37 +18,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Repo'yu çek
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Node kur
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-          cache-dependency-path: academics-at-risk-frontend/package-lock.json
 
-      # Node modüllerini kur (npm ci yerine install)
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('academics-at-risk-frontend/package-lock.json') }}
+          restore-keys: |
+            npm-
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci --prefer-offline
         working-directory: ./academics-at-risk-frontend
-        env:
-          ROLLUP_SKIP_NATIVE_BUILD: true  # Rollup native binary'i atla
 
-      # Projeyi build et
       - name: Build
         run: npm run build
         working-directory: ./academics-at-risk-frontend
-        env:
-          ROLLUP_SKIP_NATIVE_BUILD: true  # Rollup native binary'i atla
 
-      # GitHub Pages setup
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
-      # Build artifact yükle
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
