@@ -38,11 +38,17 @@
 ## 4. FRONTEND DoD (React Deploy)
 
  Bundle-Größe <100KB (gzip)
+ 
 ✅ Lighthouse-Score >90
+
 ✅ TanStack Query → No stale data
+
 ✅ Role-basierte UI (ADMIN/USER)
+
 ✅ Mobil responsive (iPhone SE)
+
 ✅ PWA installierbar
+
 
 ## 5. INFRA DoD (Docker Stack)
 docker stack ps aar # → Alle running
